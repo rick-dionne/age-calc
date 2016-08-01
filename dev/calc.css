@@ -1,0 +1,54 @@
+body {
+    margin: 0px auto;
+    padding: 0px;
+    width: 880px;
+    font-family: 'PT Serif', serif;
+    border: solid 1px black;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+p {
+    margin: 18px 0px 0px 0px;
+}
+
+a {
+    font-weight: bold;
+    color: #047390;
+}
+
+#main_content {
+    height: 400px;
+    padding: 0px 10px;
+}
+
+#main_content h1 {
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+span#bad_input {
+    font-style: italic;
+    color: Red;
+}
+
+span.bolded {
+    font-weight: 700;
+    font-size: 20pt;
+}
+
+#footnote p {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+div#footer {
+    margin: 10px;
+    padding-right: 50px;
+    height: 80px;
+}
+
+div#footer a {
+    float: right;
+    line-height: 80px;
+}

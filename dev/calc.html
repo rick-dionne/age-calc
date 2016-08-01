@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>How Old Will You Be When Social Security Goes Bust?</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="calc.js"></script>
+    <link type="text/css" rel="stylesheet" href="calc.css"/>
+  </head>
+  <body>
+    <div id="banner">
+      <img src="banner_scaled.jpg" width="100%" height="100%"/>
+    </div>
+    <div id="main_content">
+      <h1>How Old Will You Be When Social Security Goes Bust?</h1>
+      <div class="input">
+	<label for="year_in">Enter your year of birth:</label>
+	<input type="text" name="year_in" id="year_in" placeholder="YYYY" value=""/>
+	<span id="bad_input"> Please enter a year between 1900 and 2020</span>
+      </div>
+      <div class="result" id="top_result">
+	<p>Social Security's trust funds will run dry when you are: <span class="bolded" id="top_res_num"></span></p>
+      </div>
+      <div class="result" id="mid_result">
+	<p><span id="mid_res_text">Under current law, your retirement benefits will be </span><span class="bolded" id="mid_res_num"></span></p>
+      </div>
+      <div class="result" id="bot_result">
+	<p>For a typical person, that's a <span class="bolded" id="bot_res_num"></span> in lifetime benefits.*</p>
+      </div>
+      <div class="result" id="reform_ad">
+	<p>To prevent this cut, we must work together to make Social Security solvent.</p>
+	<p><a href="http://crfb.org/socialsecurityreformer/" target="_blank">Design your own fix here.</a></p>
+      </div>
+      <div class="result" id="footnote">
+	<p>*measured in 2016 CPI-Indexed Dollars</p>
+      </div>
+    </div>
+    <div id="footer">
+      <img src="crfb_logo_gradient.jpg" height="100%"/>
+      <a href="http://www.crfb.org" target="_blank">www.crfb.org</a>
+    </div>
+  </body>
+</html>
