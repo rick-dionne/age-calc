@@ -32,9 +32,14 @@ span#bad_input {
     color: Red;
 }
 
-span.bolded {
+span.bigNum {
+    font-size: 21pt;
     font-weight: 700;
-    font-size: 20pt;
+}
+
+span.smallNum {
+    font-size: 19pt;
+    font-weight: 700;
 }
 
 #footnote p {
