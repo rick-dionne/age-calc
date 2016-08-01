@@ -6,7 +6,9 @@ A simple online tool for calculating how old a person will be when the Social Se
 
 ## Build Instructions
 
-* `make build` to deploy, access the tool through `static/calc.html`
+* `make build` to deploy, access the tool through `static/calc.html` (by default)
+    * set the `TARGET` variable in the makefile to cutomize the deployment target
+    * open the tool with any modern web browser
 * `make clean` to clean repo
 
 ## Implementation Details
