@@ -24,12 +24,12 @@ function displayResults() {
 	    $('#top_res_num').html(' ' + (2034-val) + ' years old');
 	    if (val < 1967) {
 		$('#mid_res_text').html('Under current law, in 2034 your retirement benefits will be ');
-		$('#mid_res_num').html(' cut by 21%');
+		$('#mid_res_num').html('cut 21%');
 		$('#top_result, #mid_result, #reform_ad').fadeIn();
 	    } else {
 		$('#mid_res_text').html('Under current law, your retirement benefits will be ');
-		$('#mid_res_num').html(' ' + g_rate_cuts[val - 1967] + ' lower than scheduled.');
-		$('#bot_res_num').html(' ' + g_benefit_cuts[val - 1967] + ' cut');
+		$('#mid_res_num').html('cut ' + g_rate_cuts[val - 1967]);
+		$('#bot_res_num').html(g_benefit_cuts[val - 1967]+ ' cut');
 		$('.result').fadeIn();
 	    }
 	}
