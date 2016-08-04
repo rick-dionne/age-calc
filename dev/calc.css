@@ -51,6 +51,7 @@ div#footer {
     margin: 10px;
     padding-right: 50px;
     height: 80px;
+    display: none;
 }
 
 div#footer a {
