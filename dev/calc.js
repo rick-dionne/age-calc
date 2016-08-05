@@ -22,10 +22,11 @@ function displayResults() {
 	    $('#bad_input').fadeIn();
 	} else {
 	    $('#top_res_num').html(' ' + (2034-val) + ' years old');
+	    prepareTweet(val);
 	    if (val < 1967) {
 		$('#mid_res_text').html('Under current law, in 2034 your retirement benefits will be ');
 		$('#mid_res_num').html('cut 21%');
-		$('#top_result, #mid_result, #reform_ad').fadeIn();
+		$('#top_result, #mid_result, #reform_ad, #share_result').fadeIn();
 	    } else {
 		$('#mid_res_text').html('Under current law, your retirement benefits will be ');
 		$('#mid_res_num').html('cut ' + g_rate_cuts[val - 1967]);
@@ -36,4 +37,25 @@ function displayResults() {
     } catch(ex) {
 	console.log(ex);
     }
+}
+
+function prepareTweet(val) {
+    var text;
+    if (val < 1967) {
+	text = 'In 2034, ';
+    } else {
+	text = 'When I retire, ';
+    }
+    text += 'my Social Security benefits will be cut by '
+	+ g_rate_cuts[(val > 1967 ? val-1967 : 0)]
+	+ '! Find out what you stand to lose:';
+    $('#tweet_result').empty();
+    $('#tweet_result').append($('<a></a>').attr({
+	'href': 'https://twitter.com/share',
+	'class': 'twitter-share-button',
+	'data-text': text,
+	'data-url': 'http://crfb.org',
+	'data-via': 'BudgetHawks'
+    }));
+    twttr.widgets.load();
 }

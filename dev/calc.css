@@ -18,7 +18,7 @@ a {
 }
 
 #main_content {
-    height: 400px;
+    height: 430px;
     padding: 0px 10px;
 }
 
@@ -42,7 +42,29 @@ span.smallNum {
     font-weight: 700;
 }
 
-#footnote p {
+div#share_result {
+    line-height: 10px;
+}
+
+div#tweet_result,div#fb_share {
+    float: left;
+    margin: 10px 0px;
+    height: 20px !important;
+    width: 60px !important;
+}
+
+#fb_share iframe,span {
+    vertical-align: top !important;
+    height: 20px !important;
+    width: 60px !important;
+}
+
+div#footnote {
+    clear: left;
+    padding-top: 20px;
+}
+
+div#footnote p {
     font-size: 8pt;
     font-style: italic;
 }
