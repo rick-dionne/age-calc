@@ -1,12 +1,8 @@
 body {
-    margin: 0px auto;
-    padding: 0px;
-    width: 700px;
     font-family: 'PT Serif', serif;
     font-size: 12pt;
     font-weight: 400;
-    background-color: white;
-    border: 1px solid black;
+    margin: 0px;
 }
 
 p {
@@ -17,6 +13,15 @@ a {
     font-weight: bold;
     color: #047390;
     font-size: 14pt;
+}
+
+#content_wrapper {
+    background-color: white;
+    border: 1px solid black;
+    margin: 0px auto;
+    padding: 0px;
+    width: 700px;
+
 }
 
 #main_content {
