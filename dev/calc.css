@@ -1,11 +1,12 @@
 body {
     margin: 0px auto;
     padding: 0px;
-    width: 880px;
+    width: 700px;
     font-family: 'PT Serif', serif;
-    border: solid 1px black;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 400;
+    background-color: white;
+    border: 1px solid black;
 }
 
 p {
@@ -15,16 +16,18 @@ p {
 a {
     font-weight: bold;
     color: #047390;
+    font-size: 14pt;
 }
 
 #main_content {
-    height: 430px;
+    height: 390px;
     padding: 0px 10px;
 }
 
 #main_content h1 {
-    font-size: 25pt;
+    font-size: 19.5pt;
     font-weight: 700;
+    margin: 18px 0px;
 }
 
 span#bad_input {
@@ -33,7 +36,7 @@ span#bad_input {
 }
 
 span.bigNum {
-    font-size: 22pt;
+    font-size: 20pt;
     font-weight: 700;
 }
 
@@ -43,37 +46,25 @@ span.smallNum {
 }
 
 div#share_result {
-    line-height: 10px;
+    line-height: 20px;
+    margin-top: 20px;
 }
 
-div#tweet_result,div#fb_share {
+div#tweet_result,div.fb-share-button {
     float: left;
-    margin: 10px 0px;
-    height: 20px !important;
-    width: 60px !important;
+    height: 40px !important;
+    width: 80px !important;
 }
 
-#fb_share iframe,span {
+.fb-share-button iframe,.fb-share-button span {
     vertical-align: top !important;
-    height: 20px !important;
-    width: 60px !important;
-}
-
-div#footnote {
-    clear: left;
-    padding-top: 20px;
-}
-
-div#footnote p {
-    font-size: 8pt;
-    font-style: italic;
+    height: 40px !important;
+    width: 80px !important;
 }
 
 div#footer {
-    margin: 10px;
-    padding-right: 50px;
+    padding: 10px 60px 10px 10px;
     height: 80px;
-    display: none;
 }
 
 div#footer a {

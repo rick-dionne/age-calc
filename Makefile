@@ -19,3 +19,4 @@ build:
 	cp -f dev/calc.css  $(TARGET)
 	cp -f dev/calc.js   $(TARGET)
 	cp -f dev/*.jpg     $(TARGET)
+	cp -f dev/*.png     $(TARGET)
