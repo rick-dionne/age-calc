@@ -15,8 +15,7 @@ clean:
 
 build:
 	@mkdir -p $(TARGET)
-	cp -f dev/calc.html $(TARGET)
-	cp -f dev/calc.css  $(TARGET)
-	cp -f dev/calc.js   $(TARGET)
-	cp -f dev/*.jpg     $(TARGET)
-	cp -f dev/*.png     $(TARGET)
+	cp -f  dev/calc.html $(TARGET)
+	cp -f  dev/calc.css  $(TARGET)
+	cp -f  dev/calc.js   $(TARGET)
+	cp -rf dev/img       $(TARGET)
