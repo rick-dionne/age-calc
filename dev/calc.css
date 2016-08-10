@@ -1,6 +1,6 @@
 body {
     font-family: 'PT Serif', serif;
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: 400;
     margin: 0px;
 }
@@ -35,44 +35,89 @@ a {
     margin: 18px 0px;
 }
 
-span#bad_input {
+#bad_input {
     font-style: italic;
     color: Red;
 }
 
-span.bigNum {
+.bigNum {
     font-size: 20pt;
     font-weight: 700;
 }
 
-span.smallNum {
+.smallNum {
     font-size: 18pt;
     font-weight: 700;
 }
 
-div#share_result {
-    line-height: 20px;
+#share_result {
     margin-top: 20px;
 }
 
-div#tweet_result,div.fb-share-button {
-    float: left;
-    height: 40px !important;
-    width: 80px !important;
+#share_result ul {
+    padding: 0px;
+    margin: 0px;
 }
 
-.fb-share-button iframe,.fb-share-button span {
-    vertical-align: top !important;
-    height: 40px !important;
-    width: 80px !important;
+.social_item {
+    display: inline-block;
+    margin: 2px 0px;
 }
 
-div#footer {
+#twitter_link {
+    background-color: #1da1f2;
+}
+
+#facebook_link {
+    background-color: #3b5998;
+}
+
+#embed_link {
+    background-color: #505050;
+}
+
+.social_link {
+    display: block;
+    padding: 4px 8px;
+    color: #ffffff;
+    font-size: 12pt;
+    font-weight: 400;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social_link:hover {
+    opacity: 0.9;
+}
+
+.social_icon {
+    height: 25px;
+    font-size: 19px;
+    line-height: 25px;
+    vertical-align: text-top;
+}
+
+.social_text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#twitter_link .social_text {
+    margin-left: -5px;
+}
+
+#embed_code {
+    width: 380px;
+    height: 25px;
+    display: inline-block;
+}
+
+#footer {
     padding: 10px 60px 10px 10px;
     height: 80px;
 }
 
-div#footer a {
+#footer a {
     float: right;
     line-height: 80px;
 }

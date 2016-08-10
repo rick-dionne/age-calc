@@ -19,21 +19,11 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-368921-9', 'auto');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
     <div id="content_wrapper">
       <div id="banner">
 	<img src="banner_scaled.jpg" width="100%" height="100%"/>
@@ -52,15 +42,37 @@
 	  <p><span id="mid_res_text">Under current law, your retirement benefits will be </span><span class="smallNum" id="mid_res_num"></span><span id="mid_res_end"> below what is scheduled.</span></p>
 	</div>
 	<div class="result" id="bot_result">
-	  <p>For a typical person, that's a <span class="bigNum" id="bot_res_num"></span> in lifetime benefits.<a id="tooltip" href="#" title="Estimates based on 2016 Social Security Trustees report, assuming average life expectancy. Total cuts measured in 2016 CPI-indexed dollars.">*</a></p>
+	  <p>For a typical person, that's a <span class="bigNum" id="bot_res_num"></span> in lifetime benefits.<a id="tooltip" href="#" title="Estimates based on 2016 Social Security&#013Trustees report, assuming average life expectancy.&#013Total cuts measured in 2016 CPI-indexed dollars.">*</a>
+	  </p>
 	</div>
 	<div class="result" id="reform_ad">
 	  <p>To prevent this cut, we must work together to make Social Security solvent.</p>
 	  <p><a href="http://crfb.org/socialsecurityreformer/" target="_blank">Design your own fix here.</a></p>
 	</div>
 	<div class="result" id="share_result">
-	  <div id="tweet_result"></div>
-	  <div class="fb-share-button" data-href="http://crfb.org/blogs/interactive-how-old-will-you-be-when-social-security-goes-bust" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcrfb.org%2Fblogs%2Finteractive-how-old-will-you-be-when-social-security-goes-bust&amp;src=sdkpreparse">Share</a></div>
+	  <ul>
+	    <li class="social_item">
+	      <a id="twitter_link" class="social_link" href="#">
+		<img class="social_icon" src="Twitter_Social_Icon_White.png" />
+		<span class="social_text">Tweet</span>
+	      </a>
+	    </li>
+	    <li class="social_item">
+	      <a id="facebook_link" class="social_link" href="#">
+		<img class="social_icon" src="FB-f-Logo__white_29.png" />
+		<span class="social_text">Share</span>
+	      </a>
+	    </li>
+	    <li class="social_item">
+	      <a id="embed_link" class="social_link" href="#">
+		<span class="social_icon">&lt/&gt </span>
+		<span class="social_text">Embed</span>
+	      </a>
+	    </li>
+	    <li id="embed_wrapper" class="social_item">
+	      <input id="embed_code" />
+	    </li>
+	  </ul>
 	</div>
       </div>
       <div id="footer">
