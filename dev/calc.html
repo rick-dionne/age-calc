@@ -30,21 +30,23 @@
 	  <input type="text" name="year_in" id="year_in" placeholder="YYYY" value=""/>
 	  <span id="bad_input"> Please enter a year between 1900 and 2020</span>
 	</div>
-	<div class="result" id="top_result">
+	<div class="result ret-result" id="top_result">
 	  <p>Social Security's trust funds will run out when you are: <span class="bigNum" id="top_res_num"></span></p>
 	</div>
-	<div class="result" id="mid_result">
+	<div class="result ret-result" id="mid_result">
 	  <p><span id="mid_res_text">Under current law, your retirement benefits will be </span><span class="smallNum" id="mid_res_num"></span><span id="mid_res_end"> below what is scheduled.</span></p>
 	</div>
 	<div class="result" id="bot_result">
 	  <p>For a typical person, that's a <span class="bigNum" id="bot_res_num"></span> in lifetime benefits.<a id="tooltip" href="#" title="Estimates based on 2016 Social Security&#013Trustees report, assuming average life expectancy.&#013Total cuts measured in 2016 CPI-indexed dollars.">*</a>
 	  </p>
 	</div>
-	<div class="result" id="reform_ad">
+	<div class="result ret-result" id="reform_ad">
 	  <p>To prevent this cut, we must work together to make Social Security solvent.</p>
+	</div>
+	<div class="result ret-result" id="reform_link">
 	  <p><a href="http://crfb.org/socialsecurityreformer/" target="_blank">Design your own fix here.</a></p>
 	</div>
-	<div class="result" id="share_result">
+	<div class="result ret-result" id="share_result">
 	  <ul>
 	    <li class="social_item">
 	      <a id="twitter_link" class="social_link" href="#">
@@ -65,14 +67,16 @@
 	      </a>
 	    </li>
 	    <li id="embed_wrapper" class="social_item">
-	      <input id="embed_code" />
+	      <input id="embed_code" spellcheck="false" />
 	    </li>
 	  </ul>
 	</div>
       </div>
       <div id="footer">
-	<img src="img/crfb_logo_gradient.jpg" height="100%"/>
-	<a href="http://www.crfb.org" target="_blank">www.crfb.org</a>
+	<a id="footer_img" href="http://www.crfb.org" target="_blank">
+	  <img src="img/crfb_logo_gradient.jpg" height="100%"/>
+	</a>
+	<a id="footer_link" href="http://www.crfb.org" target="_blank">www.crfb.org</a>
       </div>
     </div>
   </body>

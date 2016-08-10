@@ -28,7 +28,7 @@ $(function() {
 	    
 	    g_show_embed = false;
 	} else {
-	    $('#embed_code').val('<iframe src="http://cs.dartmouth.edu/~rwd/crfb/ssbust/static/calc.html" style="width: 100%; height: 660px; border: 0px"></iframe>');
+	    $('#embed_code').val('<iframe src="http://crfb.org/tools/ss-bust/calc.html" style="width: 100%; height: 660px; border: 0px"></iframe>');
 	    $('#embed_wrapper').fadeIn( 100 );
 	    $('#embed_code').select();
 	    g_show_embed = true;
@@ -52,7 +52,7 @@ function displayResults() {
 		$('#mid_res_text').html('Unless the law is changed, your retirement benefits will be ');
 		$('#mid_res_num').html('cut by 21% in 2034');
 		$('#mid_res_end').html('');
-		$('#top_result, #mid_result, #reform_ad, #share_result').fadeIn();
+		$('.ret-result').fadeIn();
 	    } else {
 		$('#mid_res_text').html('Under current law, your retirement benefits will be ');
 		$('#mid_res_num').html('cut ' + g_rate_cuts[val - 1967]);

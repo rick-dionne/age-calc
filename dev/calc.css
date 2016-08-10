@@ -5,10 +5,6 @@ body {
     margin: 0px;
 }
 
-p {
-    margin: 18px 0px 0px 0px;
-}
-
 a {
     font-weight: bold;
     color: #047390;
@@ -25,19 +21,34 @@ a {
 }
 
 #main_content {
-    height: 390px;
+    height: 350px;
     padding: 0px 10px;
 }
 
 #main_content h1 {
     font-size: 19.5pt;
     font-weight: 700;
-    margin: 18px 0px;
+    margin: 15px 0px;
+}
+
+.input {
+    margin-bottom: 5px;
 }
 
 #bad_input {
     font-style: italic;
     color: Red;
+}
+
+.result {
+    height: 42px;
+    position: relative;
+}
+
+.result p {
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .bigNum {
@@ -117,7 +128,7 @@ a {
     height: 80px;
 }
 
-#footer a {
+#footer_link {
     float: right;
     line-height: 80px;
 }
