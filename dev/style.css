@@ -3,7 +3,6 @@ body {
     font-size: 13pt;
     font-weight: 400;
     margin: 0px;
-    margin-top: 5px;
 }
 
 a {
@@ -15,7 +14,7 @@ a {
 #content_wrapper {
     background-color: white;
     border: 1px solid black;
-    margin: 0px auto;
+    margin: 5px auto 0px auto;
     padding: 0px;
     width: 700px;
 
