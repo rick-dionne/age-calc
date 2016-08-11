@@ -3,7 +3,7 @@
 
 # sets deployment target
 # must be writable directory path
-TARGET=./static
+TARGET=./static/
 
 all: build
 
@@ -14,8 +14,8 @@ clean:
 	rm -f dev/*~
 
 build:
-	@mkdir -p $(TARGET)
-	cp -f  dev/calc.html $(TARGET)
-	cp -f  dev/calc.css  $(TARGET)
-	cp -f  dev/calc.js   $(TARGET)
-	cp -rf dev/img       $(TARGET)
+	mkdir -p $(TARGET)
+	cp -f  dev/index.html $(TARGET)
+	cp -f  dev/style.css  $(TARGET)
+	cp -f  dev/calc.js    $(TARGET)
+	cp -rf dev/img        $(TARGET)

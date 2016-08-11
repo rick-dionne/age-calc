@@ -28,7 +28,7 @@ $(function() {
 	    
 	    g_show_embed = false;
 	} else {
-	    $('#embed_code').val('<iframe src="http://crfb.org/tools/ss-bust/calc.html" style="width: 100%; height: 660px; border: 0px"></iframe>');
+	    $('#embed_code').val('<iframe src="http://crfb.org/tools/ss-bust/" style="width: 100%; height: 635px; border: 0px"></iframe>');
 	    $('#embed_wrapper').fadeIn( 100 );
 	    $('#embed_code').select();
 	    g_show_embed = true;
