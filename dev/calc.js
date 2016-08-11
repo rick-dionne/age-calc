@@ -28,7 +28,7 @@ $(function() {
 	    
 	    g_show_embed = false;
 	} else {
-	    $('#embed_code').val('<iframe src="http://crfb.org/tools/ss-bust/" style="width: 100%; height: 635px; border: 0px"></iframe>');
+	    $('#embed_code').val('<iframe src="http://crfb.org/tools/ss-bust/" style="width: 100%; height: 640px; border: 0px"></iframe>');
 	    $('#embed_wrapper').fadeIn( 100 );
 	    $('#embed_code').select();
 	    g_show_embed = true;
@@ -38,7 +38,8 @@ $(function() {
 
 function displayResults() {
     try {
-	$('.result, #bad_input').hide();
+	$('.result, #bad_input, #embed_wrapper').hide();
+	g_show_embed = false;
 	var val = parseInt($('#year_in').val());
 	if(isNaN(val) || val > 2020 || val < 1900)
 	    val = '';
